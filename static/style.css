@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 150px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.card-body {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+
+h2.error {
+    color: #ff0000;
+    font-size: 28px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .card img {
+        max-width: 100px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}

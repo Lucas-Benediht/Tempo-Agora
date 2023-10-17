@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tempo agora</title>
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <h1>Tempo agora</h1>
+    <br>
+    <form action="/" method="post">
+        <input type="text" name="city" placeholder="Digite sua cidade">
+        <input type="submit" value="Pesquisar">
+    </form>
+    <br>
+    <div class="card">
+        <img src="{{ imagem_url }}" alt="Céu limpo">
+        <div class="card-body">
+            <h2>Cidade: {{ cidade }}</h2>
+            <h2>Temperatura: {{ temperatura }} C°</h2>
+            <h2>Descrição: {{ descricao }}</h2>
+        </div>
+    </div>
+    {% if erro %}
+        <h2>Erro: {{ erro }}</h2>
+    {% endif %}
+</body>
+</html>
